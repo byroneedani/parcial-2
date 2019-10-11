@@ -1,0 +1,80 @@
+form
+{
+    position: absolute;
+   left: 55%;
+   bottom: 58%;
+}
+.form-group{
+    width:50%;
+  height:50vh;
+  position: relative;
+  left: 25%;
+}
+
+.social {
+	position: relative; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+ /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+ 
+	.social ul {
+		list-style: none;
+	}
+ 
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 10px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+ 
+	.social ul li .icon-facebook {background:#3b5998;} 
+	.social ul li .icon-twitter {background: #00abf0;}
+	.social ul li .icon-instagram {background: #FF69B4;}
+ 
+	.social ul li a:hover {
+		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+body {
+    background-image: url(https://wallpapercave.com/wp/wp2238949.jpg);
+    background-position: center;
+    position: relative;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  ul.nav-pills {
+    top: 20px;
+    position: fixed;
+    
+    border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 0px solid #000000;
+  }
+  div.col-sm-9 div {
+    height: auto;
+    font-size: 20px;
+    text-align: justify;
+  }
+  #section1 {color: #000; 
+    border: #1E88E5 solid;
+}
+  #section2 {color: #000; border: #1E88E5 solid;
+text-align: justify;
+    }
+  #section3 {color: #000; border: #1E88E5 solid;}
+  #section4 {color: #000; border: #1E88E5 solid;}
+  #section5 {color: #000; border: #1E88E5 solid;}
+  
+  @media screen and (max-width: 910px) {
+    #section1, #section2, #section3, #section41, #section42  {
+      margin-left: 150px;
+    }
+  }
